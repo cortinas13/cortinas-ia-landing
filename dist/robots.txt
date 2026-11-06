@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://cortinas13.github.io/cortinas-ia-landing/sitemap.xml
