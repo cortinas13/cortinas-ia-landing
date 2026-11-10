@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#070b17">
+  <meta name="description" content="Responda a 10 perguntas e descubra qual pode ser o próximo passo para apresentar melhor seu negócio.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Cortinas IA">
+  <meta property="og:title" content="Diagnóstico do seu negócio | Cortinas IA">
+  <meta property="og:description" content="Um diagnóstico guiado para encontrar o melhor próximo passo para sua oferta, seu site e seu atendimento.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="diagnostico.css">
+  <title>Diagnóstico do seu negócio | Cortinas IA</title>
+</head>
+<body>
+  <a class="skip-link" href="#diagnostico-form">Pular para o diagnóstico</a>
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="Cortinas IA — voltar ao site">CORTINAS <span>IA</span></a>
+    <a class="back-link" href="./">Voltar para o site <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main class="page-shell">
+    <section class="intro" aria-labelledby="page-title">
+      <p class="eyebrow">Diagnóstico de negócio · Cortinas IA</p>
+      <h1 id="page-title">Encontre o próximo passo <em>com mais clareza.</em></h1>
+      <p class="intro-copy">Dez respostas ajudam a entender sua oferta, o caminho até o cliente e o que vale avaliar primeiro. No final, você recebe uma indicação inicial — sem compromisso e sem promessa automática de preço ou prazo.</p>
+
+      <div class="route-card" aria-label="O diagnóstico organiza oferta, apresentação e atendimento">
+        <div class="route-card-head"><span>UM CAMINHO MAIS CLARO</span><span class="route-signal" aria-hidden="true"></span></div>
+        <div class="route-line" aria-hidden="true"><i></i><i></i><i></i></div>
+        <div class="route-stops">
+          <div><span class="stop-icon">01</span><strong>Oferta</strong><small>O que mostrar</small></div>
+          <div><span class="stop-icon">02</span><strong>Experiência</strong><small>Como apresentar</small></div>
+          <div><span class="stop-icon">03</span><strong>Conversa</strong><small>Como avançar</small></div>
+        </div>
+        <p>As respostas ficam nesta página até você escolher abrir o WhatsApp.</p>
+      </div>
+
+      <p class="intro-footnote"><span aria-hidden="true">✦</span> A indicação serve para iniciar uma conversa. Uma pessoa da Cortinas IA confirma o escopo antes de qualquer proposta.</p>
+    </section>
+
+    <section class="diagnostic-panel" aria-labelledby="form-title">
+      <div class="panel-heading">
+        <div>
+          <p class="eyebrow">Seu ponto de partida</p>
+          <h2 id="form-title">Vamos entender seu negócio.</h2>
+        </div>
+        <span class="question-count" data-step-count>01 <span>/ 10</span></span>
+      </div>
+
+      <div class="progress-track" role="progressbar" aria-label="Progresso do diagnóstico" aria-valuemin="1" aria-valuemax="10" aria-valuenow="1" data-progress>
+        <span data-progress-fill></span>
+      </div>
+      <p class="progress-caption" data-progress-caption>Pergunta 1 de 10</p>
+
+      <noscript>
+        <p class="noscript-note">Ative o JavaScript para navegar pelas perguntas e receber sua indicação. Você também pode responder abaixo e chamar a Cortinas IA pelo <a href="https://wa.me/5515996113859?text=Ol%C3%A1%2C%20quero%20conversar%20sobre%20o%20diagn%C3%B3stico%20do%20meu%20neg%C3%B3cio.">WhatsApp</a>.</p>
+      </noscript>
+
+      <form id="diagnostico-form">
+        <fieldset class="question-step" data-step="0">
+          <legend><span class="question-index">01</span> Em qual tipo de negócio você atua?</legend>
+          <p class="question-help">Isso ajuda a entender como as pessoas costumam escolher o que você oferece.</p>
+          <div class="option-list">
+            <label class="option"><input type="radio" name="segment" value="servicos-locais" required><span>Serviços locais</span></label>
+            <label class="option"><input type="radio" name="segment" value="comercio"><span>Comércio ou loja</span></label>
+            <label class="option"><input type="radio" name="segment" value="alimentacao-eventos"><span>Alimentação ou eventos</span></label>
+            <label class="option"><input type="radio" name="segment" value="beleza-saude"><span>Beleza ou saúde</span></label>
+            <label class="option"><input type="radio" name="segment" value="profissional-b2b"><span>Serviço profissional ou B2B</span></label>
+            <label class="option"><input type="radio" name="segment" value="outro"><span>Outro tipo de negócio</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="question-step" data-step="1">
+          <legend><span class="question-index">02</span> Qual produto ou serviço você quer destacar primeiro?</legend>
+          <p class="question-help">Descreva em poucas palavras. Não precisa ter uma oferta pronta.</p>
+          <label class="visually-hidden" for="priority-offer">Produto ou serviço principal</label>
+          <textarea id="priority-offer" name="priorityOffer" rows="3" maxlength="180" placeholder="Ex.: manutenção de ar-condicionado residencial" required></textarea>
+        </fieldset>
+
+        <fieldset class="question-step" data-step="2">
+          <legend><span class="question-index">03</span> Quem você quer atrair com mais frequência?</legend>
+          <p class="question-help">Pense em quem mais se beneficia do que você oferece.</p>
+          <div class="option-list">
+            <label class="option"><input type="radio" name="audience" value="pessoas-regiao" required><span>Pessoas e famílias da minha região</span></label>
+            <label class="option"><input type="radio" name="audience" value="empresas"><span>Empresas ou equipes</span></label>
+            <label class="option"><input type="radio" name="audience" value="eventos"><span>Quem organiza festas ou eventos</span></label>
+            <label class="option"><input type="radio" name="audience" value="publico-especifico"><span>Um público com uma necessidade específica</span></label>
+            <label class="option"><input type="radio" name="audience" value="a-definir"><span>Ainda preciso definir</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="question-step" data-step="3">
+          <legend><span class="question-index">04</span> Qual ação você gostaria que a pessoa realizasse?</legend>
+          <p class="question-help">Escolha a ação mais importante para começar.</p>
+          <div class="option-list">
+            <label class="option"><input type="radio" name="goal" value="pedir-orcamento" required><span>Pedir um orçamento</span></label>
+            <label class="option"><input type="radio" name="goal" value="agendar"><span>Agendar ou marcar uma conversa</span></label>
+            <label class="option"><input type="radio" name="goal" value="fazer-pedido"><span>Fazer um pedido ou comprar</span></label>
+            <label class="option"><input type="radio" name="goal" value="conhecer-trabalho"><span>Conhecer meu trabalho e meus serviços</span></label>
+            <label class="option"><input type="radio" name="goal" value="a-definir"><span>Ainda não tenho certeza</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="question-step" data-step="4">
+          <legend><span class="question-index">05</span> Por onde as pessoas falam com você hoje?</legend>
+          <p class="question-help">Marque o canal que mais costuma iniciar uma conversa.</p>
+          <div class="option-list">
+            <label class="option"><input type="radio" name="channel" value="whatsapp" required><span>WhatsApp</span></label>
+            <label class="option"><input type="radio" name="channel" value="redes-sociais"><span>Redes sociais</span></label>
+            <label class="option"><input type="radio" name="channel" value="telefone-presencial"><span>Telefone ou atendimento presencial</span></label>
+            <label class="option"><input type="radio" name="channel" value="site"><span>Site ou formulário</span></label>
+            <label class="option"><input type="radio" name="channel" value="sem-canal"><span>Ainda não tenho um caminho definido</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="question-step" data-step="5">
+          <legend><span class="question-index">06</span> O que mais dificulta conseguir o próximo cliente?</legend>
+          <p class="question-help">Escolha o desafio que mais se aproxima do momento atual.</p>
+          <div class="option-list">
+            <label class="option"><input type="radio" name="challenge" value="oferta-confusa" required><span>As pessoas não entendem bem o que ofereço</span></label>
+            <label class="option"><input type="radio" name="challenge" value="pouca-visibilidade"><span>É difícil encontrar ou conhecer meu negócio</span></label>
+            <label class="option"><input type="radio" name="challenge" value="perguntas-repetidas"><span>Recebo dúvidas repetidas antes de fechar</span></label>
+            <label class="option"><input type="radio" name="challenge" value="poucos-pedidos"><span>Quero organizar melhor a chegada de pedidos</span></label>
+            <label class="option"><input type="radio" name="challenge" value="nao-sei"><span>Ainda não sei identificar o principal obstáculo</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="question-step" data-step="6">
+          <legend><span class="question-index">07</span> Você já sabe qual oferta quer priorizar?</legend>
+          <p class="question-help">Uma oferta principal ajuda a deixar a mensagem mais clara.</p>
+          <div class="option-list">
+            <label class="option"><input type="radio" name="offerStatus" value="definida" required><span>Sim, tenho uma oferta principal</span></label>
+            <label class="option"><input type="radio" name="offerStatus" value="varias"><span>Tenho algumas opções e preciso escolher</span></label>
+            <label class="option"><input type="radio" name="offerStatus" value="nao-definida"><span>Ainda não defini uma oferta</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="question-step" data-step="7">
+          <legend><span class="question-index">08</span> Que materiais você pode autorizar para o projeto?</legend>
+          <p class="question-help">Podem ser fotos, catálogo, identidade visual ou uma prova real do trabalho.</p>
+          <div class="option-list">
+            <label class="option"><input type="radio" name="materials" value="autorizados" required><span>Tenho materiais próprios que posso autorizar</span></label>
+            <label class="option"><input type="radio" name="materials" value="parte-pendente"><span>Tenho alguns, mas preciso confirmar permissões</span></label>
+            <label class="option"><input type="radio" name="materials" value="sem-materiais"><span>Ainda não tenho materiais prontos</span></label>
+          </div>
+          <p class="fine-print">Não use fotos, avaliações ou dados de clientes sem autorização.</p>
+        </fieldset>
+
+        <fieldset class="question-step" data-step="8">
+          <legend><span class="question-index">09</span> O que a solução precisaria incluir?</legend>
+          <p class="question-help">Isso ajuda a diferenciar uma página direta de um projeto que precisa ser desenhado com mais detalhes.</p>
+          <div class="option-list">
+            <label class="option"><input type="radio" name="complexity" value="pagina-unica" required><span>Uma página com apresentação e botão de contato</span></label>
+            <label class="option"><input type="radio" name="complexity" value="catalogo"><span>Catálogo ou várias categorias de produtos</span></label>
+            <label class="option"><input type="radio" name="complexity" value="agenda-pagamento"><span>Agenda, pagamento ou pedido online</span></label>
+            <label class="option"><input type="radio" name="complexity" value="integracoes-automacao"><span>Integrações ou automações de atendimento</span></label>
+            <label class="option"><input type="radio" name="complexity" value="nao-sei"><span>Ainda não sei o que será necessário</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="question-step" data-step="9">
+          <legend><span class="question-index">10</span> Quem vai receber e acompanhar os novos pedidos?</legend>
+          <p class="question-help">A experiência precisa combinar com a capacidade real de atendimento.</p>
+          <div class="option-list">
+            <label class="option"><input type="radio" name="followUp" value="eu-acompanho" required><span>Eu vou acompanhar as mensagens</span></label>
+            <label class="option"><input type="radio" name="followUp" value="equipe-definida"><span>Uma pessoa da equipe já está responsável</span></label>
+            <label class="option"><input type="radio" name="followUp" value="sem-responsavel"><span>Ainda não defini quem vai responder</span></label>
+            <label class="option"><input type="radio" name="followUp" value="capacidade-incerta"><span>Preciso entender se consigo atender mais pedidos</span></label>
+          </div>
+        </fieldset>
+
+        <div class="form-actions" data-form-actions>
+          <button class="button button-secondary" type="button" data-previous disabled>Voltar</button>
+          <button class="button button-primary" type="button" data-next>Próxima pergunta <span aria-hidden="true">→</span></button>
+          <button class="button button-primary" type="submit" data-finish hidden>Ver próximo passo <span aria-hidden="true">→</span></button>
+        </div>
+        <p class="form-error" data-form-error role="alert" hidden>Responda esta pergunta para continuar.</p>
+        <p class="privacy-note">Suas respostas não são enviadas automaticamente nem usadas em analytics.</p>
+      </form>
+
+      <section class="result-step" data-contact-step hidden aria-labelledby="contact-title">
+        <p class="eyebrow">Respostas organizadas</p>
+        <h3 id="contact-title">Sua indicação está pronta.</h3>
+        <p>Abra o WhatsApp para revisar o resumo e, se quiser, envie-o para a Cortinas IA. Depois do clique, a indicação também aparece aqui.</p>
+        <a class="button button-primary contact-button" data-whatsapp-link href="https://wa.me/5515996113859" target="_blank" rel="noopener noreferrer">Abrir WhatsApp e ver minha indicação <span aria-hidden="true">↗</span></a>
+        <p class="contact-note">A mensagem fica como rascunho. Você escolhe se quer enviá-la.</p>
+        <button class="edit-button" type="button" data-edit>Editar respostas</button>
+      </section>
+
+      <section class="recommendation" data-recommendation hidden aria-labelledby="recommendation-title" tabindex="-1">
+        <p class="eyebrow">Indicação inicial</p>
+        <h3 id="recommendation-title" data-recommendation-title></h3>
+        <p data-recommendation-copy></p>
+        <ul data-recommendation-reasons></ul>
+        <p class="recommendation-note" data-recommendation-note></p>
+        <a class="text-link" href="./#diagnostico">Ver outros canais de contato <span aria-hidden="true">↗</span></a>
+        <button class="edit-button" type="button" data-edit>Revisar minhas respostas</button>
+      </section>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <span>CORTINAS IA · Estratégia, criação e conversas com direção.</span>
+    <a href="./">Voltar ao site</a>
+  </footer>
+
+  <script src="diagnostico-regras.js"></script>
+  <script src="diagnostico.js"></script>
+</body>
+</html>
